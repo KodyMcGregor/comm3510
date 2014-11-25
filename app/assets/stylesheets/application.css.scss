@@ -1,0 +1,33 @@
+@import "bootvariables";
+@import "bootstrap";
+@import "bootstrap-sprockets";
+
+
+body {
+  padding-top: 50px;
+}
+
+// Helper classes
+
+.center {
+  text-align: center;
+}
+
+// Custom Jumbotrons
+
+.jumbo-home {
+  @extend .jumbotron;
+  padding: 75px 0px;
+  text-align: center;
+  background: white;
+  h1 {
+    color: $accent;
+  }
+}
+
+// Navbar
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background: $accent;
+}
+
