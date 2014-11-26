@@ -1,3 +1,21 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbo-france {
+  @extend .jumbotron;
+  background: white;
+
+  h1 {
+    color: $accent;
+    text-align: center;
+    margin-top: 20px;
+  }
+  p {
+    text-align: left;
+  }
+  .about-img {
+    margin-top: -100px;
+  }
+
+}
+

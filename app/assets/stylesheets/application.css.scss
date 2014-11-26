@@ -19,15 +19,59 @@ body {
   @extend .jumbotron;
   padding: 75px 0px;
   text-align: center;
+  background: transparent;
+  h1 {
+    color: $accent;
+  }
+  p {
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.jumbo-about {
+
+  @extend .jumbotron;
+  padding: 75px 20px;
+  background: $brand-gray;
+}
+.jumbo-contact {
+  @extend .jumbotron;
+  padding: 75px 0px;
+  text-align: center;
   background: white;
   h1 {
     color: $accent;
   }
 }
-
+.awesome {
+  background: image_url('san_sebastian_spain.JPG');
+  background-size: cover;
+  height: 100vh;
+}
 // Navbar
 
 .navbar-default .navbar-nav > .active > a:hover {
   background: $accent;
 }
 
+// Contact Page
+.contact {
+  text-align: left;
+}
+
+@import "pages";
+
+hr {
+  border-top: 1px solid $accent;
+}
+
+li.list-group-item.active {
+  a {
+    color: #ffffff;
+  }
+
+}
+a.fart {
+  color: #ffffff;
+}

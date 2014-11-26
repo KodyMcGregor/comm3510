@@ -1,0 +1,22 @@
+<div class="jumbo-france">
+  <h1>Field Trips</h1>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-2">
+      <%= image_tag 'picos de europa_spain.JPG', class: 'img-circle', width: '200px', height: '200px' %>
+      <hr/>
+      <ul class="list-group">
+        <li class="list-group-item fart <%= 'active' if current_page?(pages_spanish_american_path) %>"><%= link_to 'Spanish vs. American', pages_spanish_american_path %></li>
+        <li class="list-group-item fart <%= 'active' if current_page?(pages_field_trips_path) %>"><%= link_to 'Field Trips', pages_field_trips_path %></li>
+        <li class="list-group-item fart <%= 'active' if current_page?(pages_host_family_path) %>"><%= link_to 'Host Family', pages_host_family_path %></li>
+      </ul>
+
+    </div>
+    <div class="col-md-6">
+
+      <p>
+        One of my favorite parts of my study abroad program was the Saturday field trips. We had three Saturday trips total and they gave us the opportunity to explore Spain as a group. We traveled to some smaller villages in the surrounding area that were the locations of important battles in Spain’s history. In these villages were old castles, cathedrals, legends, stories, and traditions. We also traveled to Picos de Europa which is a national park in Northern Spain! Picos was my favorite trip because it reminded me so much of Utah. We ate lunch by a lake, surrounded by gorgeous green mountains and fog rolling in with the rain. Two of our classmates decided to do a polar bear challenge and jump in the freezing lake. They were a little cold for the rest of the day.
+      </p>
+    </div>
+  </div>
+
+</div>

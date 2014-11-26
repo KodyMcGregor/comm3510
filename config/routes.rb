@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
   root 'pages#home'
   get 'pages/home'
+  get 'pages/about'
+  get 'pages/contact'
+  get 'pages/spain'
+  get 'pages/france'
+  get 'pages/spain_visit'
+  get 'pages/france_visit'
+  get 'pages/host_family'
+  get 'pages/spanish_american'
+  get 'pages/field_trips'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -8,13 +8,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'Ya Bits', root_path, class: 'navbar-brand' %>
+      <%= link_to "Jessica's Study Abroad", root_path, class: 'navbar-brand' %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to 'Home', root_path %></li>
+        <li class="<%= 'active' if current_page?(pages_about_path) %>"><%= link_to 'About',pages_about_path %></li>
+        <li class="<%= 'active' if current_page?(pages_spain_path) %>"><%= link_to 'Spain', pages_spain_path %></li>
+        <li class="<%= 'active' if current_page?(pages_france_path) %>"><%= link_to 'France', pages_france_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Classroom <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="<%= 'active' if current_page?(pages_spanish_american_path) %>"><%= link_to 'Spanish vs. American', pages_spanish_american_path %></li>
+            <li class="<%= 'active' if current_page?(pages_field_trips_path) %>"><%= link_to 'Field Trips', pages_field_trips_path %></li>
+            <li class="<%= 'active' if current_page?(pages_host_family_path) %>"><%= link_to 'Host Family', pages_host_family_path %></li>
+          </ul>
+        </li>
+        <li class="<%= 'active' if current_page?(pages_contact_path) %>"><%= link_to 'Contact', pages_contact_path %></li>
       </ul>
     </div>
   </div>
