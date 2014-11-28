@@ -22,12 +22,13 @@ body {
   text-align: center;
   background: transparent;
   h1 {
-    color: $accent;
+    color: white;
   }
   p {
     text-align: center;
-    color: #ffffff;
+    color: #eeeeee;
   }
+  z-index: 99;
 }
 
 .jumbo-about {
@@ -46,9 +47,11 @@ body {
   }
 }
 .awesome {
-  background: image_url('san_sebastian_spain.JPG');
+  background: linear-gradient(rgba(255, 99, 71, .7), rgba(255, 99, 71, .2)), image_url('gijon_spain.JPG');
   background-size: cover;
   height: 100vh;
+  z-index: 1;
+
 }
 // Navbar
 
@@ -75,4 +78,13 @@ li.list-group-item.active {
 }
 a.fart {
   color: #ffffff;
+}
+
+.footer {
+  background: $brand-primary;
+  color: #ffffff;
+  padding: 10px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%
 }
